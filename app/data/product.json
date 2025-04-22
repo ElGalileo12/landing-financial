@@ -88,5 +88,24 @@
     "categoria": "Inversión",
     "nivelRiesgo": 5,
     "descripcion": "Combinación de activos conservadores y agresivos."
+  },
+  {
+    "id": "10011",
+    "nombre": "Cuenta de Ahorro Premium",
+    "tipo": "Cuenta",
+    "tasaInteres": 2.1,
+    "categoria": "Ahorro",
+    "nivelRiesgo": 1,
+    "descripcion": "Cuenta con interés compuesto mensual y sin comisiones por manejo."
+  },
+  {
+    "id": "10012",
+    "nombre": "Seguro de Vida Integral",
+    "tipo": "Seguro",
+    "tasaInteres": null,
+    "categoria": "Protección",
+    "nivelRiesgo": "N/A",
+    "descripcion": "Cobertura amplia con beneficios por invalidez y fallecimiento."
   }
+  
 ]

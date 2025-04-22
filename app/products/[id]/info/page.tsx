@@ -18,9 +18,9 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
         <Link
           aria-label="Volver al catálogo"
           href="/products"
-          className="mb-4 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded"
+          className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-400 transition-colors duration-200"
         >
-          <ArrowLeftIcon className="h-5 w-5 text-gray-700" />
+          <ArrowLeftIcon className="h-5 w-5" />
           Volver al catálogo
         </Link>
       </div>

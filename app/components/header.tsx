@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="px-4 py-4 flex items-center justify-between">
         <Link
           aria-label="Inicio"
           href="/"
@@ -32,7 +32,7 @@ export default function Header() {
           FinanTech
         </Link>
 
-        <nav className="flex space-x-4 mx-10">
+        <nav className="flex space-x-4">
           <Link aria-label="Inicio" href="/" className={linkClasses("/")}>
             Inicio
           </Link>

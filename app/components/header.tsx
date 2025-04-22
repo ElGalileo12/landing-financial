@@ -18,6 +18,7 @@ export default function Header() {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link
+          aria-label="Inicio"
           href="/"
           className="text-xl font-bold text-black flex items-center gap-2"
         >
@@ -32,10 +33,14 @@ export default function Header() {
         </Link>
 
         <nav className="flex space-x-4 mx-10">
-          <Link href="/" className={linkClasses("/")}>
+          <Link aria-label="Inicio" href="/" className={linkClasses("/")}>
             Inicio
           </Link>
-          <Link href="/products" className={linkClasses("/products")}>
+          <Link
+            aria-label="Productos"
+            href="/products"
+            className={linkClasses("/products")}
+          >
             Productos
           </Link>
         </nav>

@@ -39,7 +39,10 @@ export default function ProductoCard({ producto }: { producto: Producto }) {
         </span>
       </p>
 
-      <Link href={`/products/${producto.id}/info`}>
+      <Link
+        aria-label={`ID Producto ${producto.id}`}
+        href={`/products/${producto.id}/info`}
+      >
         <button className="mt-3 bg-green-600 text-white py-1 px-4 rounded-lg hover:bg-green-700 text-sm block mx-auto">
           Ver detalles
         </button>

@@ -3,9 +3,9 @@
     "id": "10001",
     "nombre": "Cuenta de Ahorros Digital",
     "tipo": "Cuenta",
-    "tasaInteres": 1.5,
+    "tasaInteres": 8,
     "categoria": "Ahorro",
-    "nivelRiesgo": 1,
+    "nivelRiesgo": 2,
     "descripcion": "Una cuenta sin cuotas de manejo y con intereses mensuales."
   },
   {
@@ -14,16 +14,16 @@
     "tipo": "Tarjeta de Crédito",
     "tasaInteres": 22.9,
     "categoria": "Crédito",
-    "nivelRiesgo": 5,
+    "nivelRiesgo": 4,
     "descripcion": "Tarjeta con cupo inicial de $3,000, sin cuota el primer año."
   },
   {
     "id": "10003",
     "nombre": "Fondo de Inversión Conservador",
     "tipo": "Fondo",
-    "tasaInteres": 4.2,
+    "tasaInteres": 6,
     "categoria": "Inversión",
-    "nivelRiesgo": 1,
+    "nivelRiesgo": 2,
     "descripcion": "Ideal para quienes desean invertir con bajo riesgo."
   },
   {
@@ -41,34 +41,34 @@
     "tipo": "Tarjeta de Crédito",
     "tasaInteres": 28.5,
     "categoria": "Crédito",
-    "nivelRiesgo": 10,
+    "nivelRiesgo": 2,
     "descripcion": "Tarjeta exclusiva con beneficios en viajes y seguros."
   },
   {
     "id": "10006",
     "nombre": "Cuenta Corriente Digital",
     "tipo": "Cuenta",
-    "tasaInteres": 0,
+    "tasaInteres": 10,
     "categoria": "Ahorro",
-    "nivelRiesgo": 1,
+    "nivelRiesgo": 2,
     "descripcion": "Sin comisiones y con transferencias gratuitas ilimitadas."
   },
   {
     "id": "10007",
     "nombre": "Fondo de Inversión Agresivo",
     "tipo": "Fondo",
-    "tasaInteres": 10.5,
+    "tasaInteres": 14,
     "categoria": "Inversión",
-    "nivelRiesgo": 10,
+    "nivelRiesgo": 1,
     "descripcion": "Alto rendimiento con mayor exposición a riesgo."
   },
   {
     "id": "10008",
     "nombre": "Seguro para Mascotas",
     "tipo": "Seguro",
-    "tasaInteres": 0.5,
+    "tasaInteres": 24,
     "categoria": "Seguros",
-    "nivelRiesgo": 0.5,
+    "nivelRiesgo": 4,
     "descripcion": "Cubre gastos veterinarios y emergencias para tu mascota."
   },
   {
@@ -77,23 +77,23 @@
     "tipo": "Préstamo",
     "tasaInteres": 17.5,
     "categoria": "Crédito",
-    "nivelRiesgo": 5,
+    "nivelRiesgo": 4,
     "descripcion": "Préstamo flexible con aprobación rápida y desembolso ágil."
   },
   {
     "id": "10010",
     "nombre": "Fondo de Inversión Balanceado",
     "tipo": "Fondo",
-    "tasaInteres": 6.3,
+    "tasaInteres": 14,
     "categoria": "Inversión",
-    "nivelRiesgo": 5,
+    "nivelRiesgo": 4,
     "descripcion": "Combinación de activos conservadores y agresivos."
   },
   {
     "id": "10011",
     "nombre": "Cuenta de Ahorro Premium",
     "tipo": "Cuenta",
-    "tasaInteres": 2.1,
+    "tasaInteres": 5,
     "categoria": "Ahorro",
     "nivelRiesgo": 1,
     "descripcion": "Cuenta con interés compuesto mensual y sin comisiones por manejo."

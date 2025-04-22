@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getProducto } from "@/app/lib/actions";
+import GraficoRiesgoRendimiento from "@/app/components/graficos";
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
@@ -46,6 +47,11 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
           <li>Cobertura para todo tipo de mascota</li>
         </ul>
       </section>
+
+      <GraficoRiesgoRendimiento
+        tasaInteres={producto.tasaInteres}
+        nivelRiesgo={producto.nivelRiesgo}
+      />
     </div>
   );
 }

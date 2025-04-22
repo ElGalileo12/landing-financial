@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏦 Landing Financiera
 
-## Getting Started
+Este proyecto es una aplicación web de tipo landing page para mostrar productos financieros como cuentas, tarjetas, fondos, seguros, y préstamos. Desarrollado con Next.js, Tailwind CSS y TypeScript.
 
-First, run the development server:
+## 🚀 Tecnologías utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Heroicons](https://heroicons.com/) (íconos SVG)
+- [use-debounce](https://github.com/xnimorz/use-debounce) (para filtros eficientes)
+
+## 📦 Instalación
+
+Primero, asegúrate de tener [pnpm](https://pnpm.io/) instalado. Luego, ejecuta los siguientes comandos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para correr el proyecto en modo desarrollo 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Esto iniciará el servidor en http://localhost:3000
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Esto lo llevará al menú principal, en la parte superior tendrá un nav que lo llevará a productos, en los productos hay un botón que lo llevará a ver el detalle de cada producto, además tiene un buscador para filtrar cada producto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sí va a un producto qu eno existe por ejemplo  http://localhost:3000/products/11002/info verá un mensaje de que no se ha encontrado el producto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Además en los productos hay un delay aproposito, para que se pueda apreciar un skeleton que se le añadió a cada producto.
 
-## Deploy on Vercel
+Este proyecto está bajo una licencia privada.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Preguntas a respondes 
+1. ¿Qué criterios seguiste para diseñar la UI de productos financieros?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Respuesta: Principalmente me fijé en la claridad y simplicidad visual, porque los productos financieros suelen tener mucha información, así que destaqué los datos claves como nombre, tipo, tasa de interés, etec... También tuve enfoque en la accesibilidad, como utilizar el aria-labels, utilizar las etiquetas semánticas y un contraste adecuado con un tono sobrio para garantizar que cualquier usuario pueda navegar en ella. Me aseguré de que la página se adaptará bien a dispositivos móviles, teblets y pc usando tailwind CSS.
+
+2. ¿Cómo decidiste cuándo usar Tailwind y cuándo Styled Components?
+
+Respuesta: Decidí usar tailwind para la mayoría de los componentes, ya que con este se puede hacer el responsive de una manera más eficiente, usa una menor carga de css, pero este conlleva una desventaja cuando se quieren utilizar valores personalizados, es posible hacerlo pero se pierde mucho la consistencia. Usé styled components en el archivo homeintro.tsx que se encuentra en app/components, para una reutilación clara en los estilos de las cards y también se le pueden agregar estilos con tailwind.
+
+3. ¿Qué harías para escalar este proyecto en una aplicación real de banca digital?
+
+Respuesta: Lo que haría es desacoplar de una mejor manera los componentes dependeindo de la lógica del negocio, integrar una base de datos con PostgresSQL o mongoDB para reemplazar el archivo .json, como no existe backend aplicar la arquitectura basada en microservicios, implementar un sistema de autenticación usando stack auth, me aseguraría de cumplir las nombar WCAG realizando pruebas con cypress entre otras cosas que quizás se me escapan ahora. 
+
+4. ¿Qué herramientas usarías para mejorar el rendimiento y monitoreo en producción?
+
+Respuesta: Para el monitoreo sería ideal usar sentry para la captura de errores y trazabnilidad de fallos, automatización, también se puede usar Datadog. Para el rendimiento con GitHub Actions + Vercel, llevar Feature para probar funcionalidades de manera controlada.

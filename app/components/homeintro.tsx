@@ -2,9 +2,17 @@
 
 import styled from "styled-components";
 
-const Card = styled.div.attrs(() => ({
-  className: "bg-green-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition",
-}))``;
+const Card = styled.div`
+  background-color: #f0fdf4; /* Tailwind: bg-green-50 */
+  padding: 1.5rem; /* Tailwind: p-6 */
+  border-radius: 1rem; /* Tailwind: rounded-2xl */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Tailwind: shadow-sm */
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind: hover:shadow-md */
+  }
+`;
 
 export default function HomeIntro() {
   return (

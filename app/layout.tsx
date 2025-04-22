@@ -1,6 +1,7 @@
 import "@/app/ui/globals.css";
 import { inter } from "@/app/ui/fonts";
 import { Metadata } from "next";
+import Header from "@/app/components/header";
 
 export const metadata: Metadata = {
   title: "Landing Financial",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <Header /> {children}
+      </body>
     </html>
   );
 }

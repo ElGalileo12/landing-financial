@@ -13,7 +13,7 @@ Este proyecto es una aplicación web de tipo landing page para mostrar productos
 - [Heroicons](https://heroicons.com/) (íconos SVG)
 - [use-debounce](https://github.com/xnimorz/use-debounce) (para filtros eficientes)
 
-# Después de bajar el repositorio, se debe agregar un archivo .env en la raiz del proyecto, donde vas a escribir lo siguiente : NEXT_PUBLIC_BASE_URL=http://localhost:3000
+ℹ️ Después de bajar el repositorio, se debe agregar un archivo .env en la raiz del proyecto, donde vas a escribir lo siguiente : NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 ## 📦 Instalación
 

@@ -13,6 +13,7 @@ Este proyecto es una aplicación web de tipo landing page para mostrar productos
 - [Heroicons](https://heroicons.com/) (íconos SVG)
 - [use-debounce](https://github.com/xnimorz/use-debounce) (para filtros eficientes)
 
+## 
 ℹ️ Después de bajar el repositorio, se debe agregar un archivo .env en la raiz del proyecto, donde vas a escribir lo siguiente : NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 ## 📦 Instalación
@@ -38,6 +39,8 @@ Sí va a un producto qu eno existe por ejemplo  http://localhost:3000/products/1
 Además en los productos http://localhost:3000/products hay un delay aproposito, para que se pueda apreciar un skeleton que se le añadió a cada producto.
 
 Este proyecto está bajo una licencia privada.
+
+## 
 
 Preguntas a respondes 
 1. ¿Qué criterios seguiste para diseñar la UI de productos financieros?

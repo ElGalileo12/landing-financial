@@ -1,6 +1,6 @@
 # 🏦 Landing Financiera
 
-Sí desea ver el proyecto en producción subido al servidor de vercel, en la parte derecha del repositorio encuentra un titulo con el nombre "Prueba técnica para Bprosys" debajo el link que lo llevará a la página.
+Sí desea ver el proyecto en producción subido al servidor de vercel, en la parte derecha del repositorio encuentra un titulo con el nombre "Landing sencilla para productos" debajo el link que lo llevará a la página.
 
 Este proyecto es una aplicación web de tipo landing page para mostrar productos financieros como cuentas, tarjetas, fondos, seguros, y préstamos. Desarrollado con Next.js, Tailwind CSS y TypeScript.
 
@@ -41,20 +41,3 @@ Además en los productos http://localhost:3000/products hay un delay aproposito,
 Este proyecto está bajo una licencia privada.
 
 ## 
-
-Preguntas a respondes 
-1. ¿Qué criterios seguiste para diseñar la UI de productos financieros?
-
-Respuesta: Principalmente me fijé en la claridad y simplicidad visual, porque los productos financieros suelen tener mucha información, así que destaqué los datos claves como nombre, tipo, tasa de interés, etec... También tuve enfoque en la accesibilidad, como utilizar el aria-labels, utilizar las etiquetas semánticas y un contraste adecuado con un tono sobrio para garantizar que cualquier usuario pueda navegar en ella. Me aseguré de que la página se adaptará bien a dispositivos móviles, teblets y pc usando tailwind CSS.
-
-2. ¿Cómo decidiste cuándo usar Tailwind y cuándo Styled Components?
-
-Respuesta: Decidí usar tailwind para la mayoría de los componentes, ya que con este se puede hacer el responsive de una manera más eficiente, usa una menor carga de css, pero este conlleva una desventaja cuando se quieren utilizar valores personalizados, es posible hacerlo pero se pierde mucho la consistencia. Usé styled components en el archivo homeintro.tsx que se encuentra en app/components, para una reutilación clara en los estilos de las cards y también se le pueden agregar estilos con tailwind.
-
-3. ¿Qué harías para escalar este proyecto en una aplicación real de banca digital?
-
-Respuesta: Lo que haría es desacoplar de una mejor manera los componentes dependeindo de la lógica del negocio, integrar una base de datos con PostgresSQL o mongoDB para reemplazar el archivo .json, como no existe backend aplicar la arquitectura basada en microservicios, implementar un sistema de autenticación usando stack auth, me aseguraría de cumplir las nombar WCAG realizando pruebas con cypress entre otras cosas que quizás se me escapan ahora. 
-
-4. ¿Qué herramientas usarías para mejorar el rendimiento y monitoreo en producción?
-
-Respuesta: Para el monitoreo sería ideal usar sentry para la captura de errores y trazabnilidad de fallos, automatización, también se puede usar Datadog. Para el rendimiento con GitHub Actions + Vercel, llevar Feature para probar funcionalidades de manera controlada.
